@@ -1,0 +1,62 @@
+\documentclass[11pt,a4paper,oneside]{article}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{pgf}
+\usepackage{pgfgantt}
+\usepackage{pgfcalendar}
+\usepackage{rotating}
+%\usepackage[filename=tasktips,mouseover,noextratext]{fancytooltips}
+
+\begin{document}
+\pagebreak
+\begin{rotate}{270}
+\begin{ganttchart}[y unit title=0.6cm,
+y unit chart=0.7cm,
+vgrid,
+title height=.85,
+hgrid=true,
+canvas/.style={fill=yellow!25, draw=blue, solid, very thick}, 
+bar/.style={fill=gray, rounded corners=3pt},
+bar left shift=.05, 
+bar right shift=-.05, 
+bar top shift=.3, 
+bar height=.3,vgrid={*1{blue, dashed}}, 
+bar label font=\normalsize\color{black!50},
+bar label anchor/.append style={align=left, text width=1.5cm},
+group right shift=0,group top shift=.6,group height=.3,group peaks={}{}{0}]{23}
+\gantttitle{2012}{5}
+\gantttitle{2013}{12}
+\gantttitle{2014}{6}\\
+\gantttitlelist{8,...,12}{1}
+\gantttitlelist{1,...,12}{1}
+\gantttitlelist{1,...,6}{1}\\
+
+
+\ganttgroup{\tooltip{Objective 1}{obje1}}{1}{4} \\
+\ganttbar{\tooltip{\textbf{Task a}}{task1a}}{4}{2} \\
+\ganttbar{\textbf{Task b}}{4}{2} \\
+\ganttbar{\textbf{Task c}}{4}{2} \\
+
+\ganttgroup{Objective 2:}{4}{6} \\
+\ganttbar{Task a}{4}{6} \\
+\ganttbar{Task b}{4}{6} \\
+
+\ganttgroup{Objective 3}{4}{6} \\
+\ganttbar{Task a}{4}{2} \\
+\ganttbar{Task b}{4}{2} \\
+\ganttbar{Task c}{4}{2} \\
+\ganttbar{Task d}{4}{2} \\
+
+\ganttgroup{Objective 4}{4}{6} \\
+\ganttbar{Task a}{4}{2} \\
+\ganttbar{Task b}{4}{2} \\
+
+\ganttgroup{Objective 5}{4}{6} \\
+\ganttbar{Task a}{4}{2} \\
+\ganttbar{Task b}{4}{2} \\
+\ganttbar{Task c}{4}{2} \\
+
+\end{ganttchart}
+
+\end{rotate}
+\end{document}

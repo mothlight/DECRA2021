@@ -1,0 +1,140 @@
+%! program = pdflatex
+
+\documentclass[12pt,a4paper]{article} 
+\usepackage{arc-dp}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage[normalem]{ulem}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{array}
+\usepackage{pgfgantt}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{subfig}
+\usepackage{pgfgantt}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+
+\usepackage{booktabs} % for spacing tables
+\usepackage{tabularx} % auto table sizing
+\usepackage{multirow} % table multirow
+\usepackage{soul}
+
+
+\usepackage{pgfgantt}
+\usepackage{setspace}
+
+%\usepackage{epsf}
+%\usepackage{fancyheadings}
+%\usepackage{subfigure}
+%\usepackage{pst-gantt}
+%\usepackage{tweaklist}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{1pt}
+  \setlength{\itemsep}{1pt plus 0.3ex}
+}
+
+
+\newcommand{\hlg}[2][green]{{%
+	\colorlet{foo}{#1}%
+	\sethlcolor{foo}\hl{#2}}%
+}
+
+\newcommand{\hly}[2][yellow]{{%
+	\colorlet{foo}{#1}%
+	\sethlcolor{foo}\hl{#2}}%
+}
+
+\newcommand{\hlr}[2][red]{{%
+	\colorlet{foo}{#1}%
+	\sethlcolor{foo}\hl{#2}}%
+}
+
+\newcommand{\hlo}[2][orange]{{%
+	\colorlet{foo}{#1}%
+	\sethlcolor{foo}\hl{#2}}%
+}
+
+
+%\renewcommand{\enumhook}{\setlength{\topsep}{0pt}%
+ % \setlength{\itemsep}{-2mm}}
+%\renewcommand{\itemhook}{\setlength{\topsep}{0pt}%
+%  \setlength{\itemsep}{-2mm}}
+  %%%%%UNCOMMENT THE NEXT COMMAND IF NEEDED
+%\renewcommand{\descripthook}{\setlength{\topsep}{0pt}%
+%  \setlength{\itemsep}{-2mm}}
+
+%\pagestyle{fancy}
+
+%\input{psfig.sty}
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
+\newcommand{\rules}[1]{\textcolor{blue}{#1}}
+\newcommand{\pset}{ {\rm P} \! \! \! {\rm P} }
+\date{}
+%\include{psfig}
+\remove{
+\topmargin -15mm
+\headheight 0pt
+\headsep 0pt
+\textheight 285mm
+\oddsidemargin -15mm
+\evensidemargin -15mm
+\textwidth 190mm
+\columnsep 10mm
+\marginparwidth 0pt
+\marginparsep 0pt
+}
+
+\usepackage[top=0.5cm, bottom=0.5cm, left=0.5cm, right=0.5cm]{geometry}
+\parindent=4mm
+\parskip=0.2mm
+
+%\usepackage{geometry} % see geometry.pdf on how to lay out the page. There's lots.
+%\geometry{a4paper} % or letter or a5paper or ... etc
+% \geometry{landscape} % rotated page geometry
+
+
+%\linespread{1.5}
+
+\newcommand*{\TitleFont}{%
+      \usefont{\encodingdefault}{\rmdefault}{b}{n}%
+      \fontsize{12}{12}%
+      \selectfont}
+
+\title{Maximising cooling through blue-green infrastructure enabled urban planning}
+%\author{}
+\date{} % delete this line to display the current date
+
+%%% BEGIN DOCUMENT
+\begin{document}
+\rmfamily
+\date{}
+
+ 
+\input{DECRA_A}
+\clearpage
+\input{DECRA_D}
+\clearpage
+\input{DECRA_F}
+\clearpage
+\input{DECRA_F17}
+\clearpage
+\input{DECRA_F18}
+\clearpage
+
+\end{document}
+
